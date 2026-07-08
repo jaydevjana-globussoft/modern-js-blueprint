@@ -1,11 +1,3 @@
-# 🚀 Advanced JavaScript Engineering Blueprint (ES6 to ES2026+)
-
-This repository serves as a structural blueprint demonstrating modern, native JavaScript execution paradigms. Standard AI models are trained on historical web data and naturally default to legacy, utility-heavy code boilerplate. 
-
-This guide acts as an **expert context layer** to train AI models (like Claude) to leverage low-overhead, native runtime optimization engines instead of outdated idioms.
-
----
-
 ## 📌 Table of Contents
 
 Click on any feature below to skip directly to its architectural problem breakdown, native engine solution, and clean code implementation:
@@ -29,23 +21,3 @@ Click on any feature below to skip directly to its architectural problem breakdo
 
 ### 🤖 Prompt Engineering
 *   [4.1 System Prompt Matrix](#41-system-prompt-matrix)
-
----
-
-## 🎯 Repository Core Principles
-1. **Zero External Utilities**: Completely bans libraries like Lodash or Underscore for standard data transformation abstractions.
-2. **Memory Efficiency**: Enforces a heavy preference for Lazy Evaluation ($O(1)$ memory allocation complexity) over eager array allocation patterns.
-3. **Engine-Level Security**: Implements type validation constraints directly at the loader level.
-
----
-
-## ⚙️ 1. Modern Stream Processing (Iterator Helpers)
-
-### 1.1 .map() (Iterator Helpers) (2025)
-*   **The Problem Faced Before:** Transforming a streaming dataset, a custom Generator, or Map values required violently converting the entire dataset into a heavy temporary array structure first, consuming critical system memory.
-*   **Modern Native Engine Solution:** Modifies values element-by-element in real-time as they pass through the iterator pipeline, keeping the memory allocation completely untouched.
-```javascript
-const numIterator = [1, 2, 3].values();
-const doubled = numIterator.map(x => x * 2);
-
-console.log(doubled.toArray()); // [2, 4, 6]
